@@ -5,8 +5,7 @@
   <!-- Ustawienia dokumentu HTML -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Fasting - Czy okresowe posty dają korzyści?</title>
-
+  <title>DietBot - twój ulubiony dietety</title>
   <!-- Metadane dla wyszukiwarek i przeglądarek -->
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,6 +24,44 @@
 
   <!-- Wczytywanie skryptu JavaScript -->
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+  <style>
+
+    .orange-border {
+        border-top: 5px solid orange;
+        border-bottom: 5px solid orange;
+        padding: 20px; /* dodatkowy padding dla odstępu od tekstu */
+      }
+
+    .orange-line {
+        border-top: 5px solid orange;
+        border-bottom: 0px solid orange;
+        padding: 0px; /* dodatkowy padding dla odstępu od tekstu */
+      }
+
+    .orange-bottom-line {
+        border-top: 0px solid orange;
+        border-bottom: 5px solid orange;
+        padding: 15px; /* dodatkowy padding dla odstępu od tekstu */
+      }
+    .banner2 {
+        background-color: rgba(0, 0, 0, 0.6); /* Kolor tła z przeźroczystością */
+        color: white; /* Kolor tekstu */
+        padding: 20px;
+        text-align: center;
+        border-radius: 15px;
+    }
+
+    .banner2 h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .banner2 span {
+        font-size: 18px;
+    }
+        
+</style>
 </head>
 
 <body>
@@ -32,7 +69,7 @@
   <div class="wrap">
 
     <!-- Nagłówek strony -->
-    <header id="header">
+    <header id="header"  style="background-color: #ffeabf;">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -41,9 +78,9 @@
             <button id="primary-nav-button" type="button">Menu</button>
 
             <!-- Logo, klikalne i przenoszące do strony głównej -->
-            <a href="home.html">
+            <a href="index.html">
               <div class="logo">
-                <img src="img/logo.png" alt="Venue Logo">
+                <img src="img/logo.jpg" alt="Venue Logo" height="100">
               </div>
             </a>
 
@@ -51,10 +88,7 @@
             <nav id="primary-nav" class="dropdown cf">
               <ul class="dropdown menu">
                 <!-- Opcje menu -->
-                <li class='active'><a class="scrollTo" data-scrollTo="popular" href="#">Przepisy</a></li>
-                <li><a class="scrollTo" data-scrollTo="blog" href="#">Artykuły</a></li>
-                <li><a class="scrollTo" data-scrollTo="services" href="#">O nas</a></li>
-                <li><a class="scrollTo" data-scrollTo="pricing-tables" href="#">Dołącz do nas</a></li>
+                <li class='active'><a class="scrollTo" href="index.html"><strong>Strona Główna</strong></a></li>
               </ul>
             </nav>
           </div>
@@ -62,19 +96,24 @@
       </div>
     </header>
   </div>
-
-  <style>
-    /* Stylowanie krawędzi */
-    .orange-border {
-      border-top: 5px solid orange;
-      border-bottom: 5px solid orange;
-      padding: 20px; /* dodatkowy padding dla odstępu od tekstu */
-    }
-  </style>
-  </head>
-  <body>
-  
-  <div class="orange-border">
+  <div class="orange-line"></div> 
+  <!-- Sekcja bannerowa na górze strony -->
+  <section class="banner" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="banner-caption">
+            <!-- Nagłówek i opis banneru -->
+            <div class="banner2">
+            <h2>Fasting - Czy okresowe posty dają korzyści?</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="background-color: #faf0db;">
+  <div class="orange-border" style="background-color: #ffffff;">
     <h1>Fasting - Czy okresowe posty dają korzyści?</h1>
     <p>
         
@@ -91,8 +130,64 @@
         Podsumowując, okresowe posty mogą przynosić korzyści dla zdrowia, w tym regulację wagi, poprawę metabolizmu i funkcji mózgu. Jednakże, zanim zdecydujesz się na tę praktykę, zawsze warto skonsultować się z profesjonalistą, aby upewnić się, że jest ona odpowiednia dla Twojej sytuacji zdrowotnej.</p>
   </div> 
 
+<!-- Sekcja przedstawiająca informacje o serwisie -->
+<section class="our-services" id="services" style="background-color: #faf0db;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        
+        <!-- Nagłówek sekcji -->
+        <div class="section-heading">
+          <span>Informacje</span>
+          <h2>O nas</h2>
+        </div>
+      
+      </div>
+    </div>
+    
+    <!-- Treść informacji o serwisie -->
+    <div class="row" >
+      <div class="col-md-12" >
+        <div class="down-services" >
+          <div class="row">
+            <!-- Lewa kolumna z opisem kim jesteśmy -->
+            <div class="col-md-5 col-md-offset-1">
+              <div class="left-content">
+                <h4>Kim jesteśmy:</h4>
+                <p style="text-align: justify; color: #0b0b0b">Jesteśmy zespołem pasjonatów zdrowego stylu życia i odżywiania, których celem jest wspieranie innych w drodze do lepszej kondycji fizycznej i mentalnej poprzez właściwe odżywianie. Wierzymy w to, że odpowiednio zbilansowana dieta jest kluczem do osiągnięcia pełni zdrowia i energii. Nasza strona, DietBot, to miejsce, gdzie łączymy innowacyjne technologie z wiedzą dietetyczną, aby pomóc Ci w osiągnięciu swoich celów żywieniowych. Dzięki naszemu zintegrowanemu botowi możesz łatwo tworzyć spersonalizowane plany żywieniowe, dostosowane do Twoich preferencji i wymagań, zapewniając jednocześnie dostęp do zdrowych przepisów oraz cennych artykułów dotyczących odżywiania. Jesteśmy tutaj, aby Cię inspirować i wspierać w każdym kroku Twojej drogi ku zdrowszemu życiu.</p>
+              </div>
+            </div>
+            <!-- Prawa kolumna z akordeonem z misją, dlaczego my, bezpieczeństwem i prywatnością -->
+            <div class="col-md-5">
+              <div class="accordions">
+                <ul class="accordion">
+                  <!-- Misja serwisu -->
+                  <li>
+                    <a>1. Nasza misja:</a>
+                    <p  style="color: #0b0b0b">W DietBot wierzymy, że zdrowe odżywianie powinno być dostępne dla każdego i nie musi być skomplikowane. Naszą misją jest dostarczanie narzędzi i wskazówek, które sprawią, że podejmowanie świadomych decyzji żywieniowych stanie się łatwiejsze i bardziej satysfakcjonujące. Chcemy, aby każdy, kto odwiedza naszą stronę, mógł czerpać inspirację do tworzenia zrównoważonych, smacznych posiłków, które wspierają zdrowie i samopoczucie. Poprzez nasze innowacyjne rozwiązania technologiczne i wiedzę ekspercką, dążymy do tego, aby każdy mógł osiągnąć swoje cele żywieniowe i cieszyć się pełnią życia. Nasza misja to nie tylko edukacja, ale także mobilizacja do pozytywnych zmian w codziennych nawykach żywieniowych, które przynoszą długoterminowe korzyści dla zdrowia i dobrej kondycji fizycznej.</p>
+                  </li>
+                  <!-- Dlaczego warto skorzystać z waszego serwisu -->
+                  <li>
+                    <a>2. Dlaczego my:</a>
+                    <p style="color: #0b0b0b">Co wyróżnia nas spośród innych serwisów streamingowych? Nasza platforma oferuje nie tylko bogatą bibliotekę treści, ale także innowacyjne funkcje, personalizowane rekomendacje i przyjazne dla użytkownika interfejsy. Dbamy o jakość, nowoczesność i zawsze staramy się przewyższyć oczekiwania naszych użytkowników.</p>
+                  </li>
+                  <!-- Bezpieczeństwo i prywatność użytkowników -->
+                  <li>
+                    <a>3. Bezpieczeństwo i prywatność:</a>
+                    <p style="color: #0b0b0b">Zależy nam na bezpieczeństwie naszych użytkowników. Wdrażamy najnowsze technologie ochrony danych, dbając o prywatność każdego subskrybenta. Tworzymy bezpieczne środowisko, w którym możesz swobodnie korzystać z naszej platformy, mając pewność, że Twoje dane są chronione.</p>
+                  </li>
+                </ul> <!-- / accordion -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Stopka strony -->
-<footer>
+<footer style="background-color: #ffffff;">
   <div class="container">
     <div class="row">
       
@@ -100,7 +195,7 @@
       <div class="col-md-5">
         <div class="about-veno">
           <div class="logo">
-            <img src="img/footer_logo.png" alt="Venue Logo">
+            <img src="img/logoFooter.jpg" alt="Venue Logo" height="100">
           </div>
           <!-- Opis serwisu -->
           <p>Odkryj nieograniczone możliwości rozrywki na DreamFlix, gdzie Twoje marzenia stają się rzeczywistością!
@@ -146,7 +241,7 @@
 
 <!-- Pod - Stopka strony -->
 <div class="sub-footer">
-  <p>Copyright &copy; 2023 Rakoczy Krzysztof, Skalska Julia</p>
+  <p>Copyright &copy; 2024 Rakoczy Krzysztof</p>
 </div>
 
 <!-- Skrypty JavaScript -->
@@ -175,6 +270,7 @@
     domain="www.chatbase.co"
     defer>
     </script>
+    </section>
 </body>
 
 </html>

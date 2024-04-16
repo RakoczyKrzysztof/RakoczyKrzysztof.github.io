@@ -26,7 +26,23 @@
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
   <style>
+    .orange-border {
+        border-top: 5px solid orange;
+        border-bottom: 5px solid orange;
+        padding: 20px; /* dodatkowy padding dla odstępu od tekstu */
+      }
 
+    .orange-line {
+        border-top: 5px solid orange;
+        border-bottom: 0px solid orange;
+        padding: 0px; /* dodatkowy padding dla odstępu od tekstu */
+      }
+
+    .orange-bottom-line {
+        border-top: 0px solid orange;
+        border-bottom: 5px solid orange;
+        padding: 15px; /* dodatkowy padding dla odstępu od tekstu */
+      }
     .banner2 {
         background-color: rgba(0, 0, 0, 0.6); /* Kolor tła z przeźroczystością */
         color: white; /* Kolor tekstu */
@@ -82,7 +98,7 @@
       </div>
     </header>
   </div>
-
+  <div class="orange-line"></div> 
   <!-- Sekcja bannerowa na górze strony -->
   <section class="banner" id="top">
     <div class="container">
@@ -104,6 +120,7 @@
     </div>
   </section>
 
+<section style="background-color: #faf0db;">
 <!-- Sekcja przepisy -->
 <section class="popular-places" id="popular"  style="background-color: #faf0db;">
   <div class="container-fluid">
@@ -303,7 +320,7 @@
         </div>
       </div>
     </div>
-
+</section>
 <!-- Sekcja przedstawiająca artykuły -->
   <section class="featured-places" id="blog" style="background-color: #ffffff;">
     <div class="container">
@@ -402,7 +419,7 @@
   </section>
 
 <!-- Sekcja przedstawiająca informacje o serwisie -->
-<section class="our-services" id="services">
+<section class="our-services" id="services" style="background-color: #faf0db;">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -435,16 +452,16 @@
                   <!-- Misja serwisu -->
                   <li>
                     <a>1. Nasza misja:</a>
-                    <p  style="color: #0b0b0b">W DietBot wierzymy, że zdrowe odżywianie powinno być dostępne dla każdego i nie musi być skomplikowane. Naszą misją jest dostarczanie narzędzi i wskazówek, które sprawią, że podejmowanie świadomych decyzji żywieniowych stanie się łatwiejsze i bardziej satysfakcjonujące. Chcemy, aby każdy, kto odwiedza naszą stronę, mógł czerpać inspirację do tworzenia zrównoważonych, smacznych posiłków, które wspierają zdrowie i samopoczucie. Poprzez nasze innowacyjne rozwiązania technologiczne i wiedzę ekspercką, dążymy do tego, aby każdy mógł osiągnąć swoje cele żywieniowe i cieszyć się pełnią życia. Nasza misja to nie tylko edukacja, ale także mobilizacja do pozytywnych zmian w codziennych nawykach żywieniowych, które przynoszą długoterminowe korzyści dla zdrowia i dobrej kondycji fizycznej.</p>
+                    <p  style="color: #0b0b0b">W DietBot ułatwiamy zdrowe odżywianie, oferując proste narzędzia i wskazówki. Naszym celem jest inspirowanie do tworzenia zrównoważonych, smacznych posiłków, które wspierają zdrowie i samopoczucie. Dzięki naszym technologicznym rozwiązaniom i wiedzy ekspertów, pomagamy osiągnąć cele żywieniowe i cieszyć się życiem. Edukujemy i mobilizujemy do pozytywnych zmian w codziennych nawykach żywieniowych, przynosząc długoterminowe korzyści dla zdrowia i kondycji fizycznej.</p>
                   </li>
                   <!-- Dlaczego warto skorzystać z waszego serwisu -->
                   <li>
                     <a>2. Dlaczego my:</a>
-                    <p style="color: #0b0b0b">Co wyróżnia nas spośród innych serwisów streamingowych? Nasza platforma oferuje nie tylko bogatą bibliotekę treści, ale także innowacyjne funkcje, personalizowane rekomendacje i przyjazne dla użytkownika interfejsy. Dbamy o jakość, nowoczesność i zawsze staramy się przewyższyć oczekiwania naszych użytkowników.</p>
+                    <p style="color: #0b0b0b">Wyróżniamy się nie tylko innowacyjnym podejściem do planowania posiłków, ale także zaangażowaniem w zapewnienie Ci kompleksowej pomocy w osiągnięciu Twoich celów żywieniowych. Nasza platforma oferuje więcej niż tylko prosty generator planów dietetycznych – stworzyliśmy społeczność, która wspiera, inspiruje i motywuje do podejmowania zdrowych wyborów każdego dnia.</p>
                   </li>
                   <!-- Bezpieczeństwo i prywatność użytkowników -->
                   <li>
-                    <a>3. Bezpieczeństwo i prywatność:</a>
+                    <a>3. Nasze wartości:</a>
                     <p style="color: #0b0b0b">Zależy nam na bezpieczeństwie naszych użytkowników. Wdrażamy najnowsze technologie ochrony danych, dbając o prywatność każdego subskrybenta. Tworzymy bezpieczne środowisko, w którym możesz swobodnie korzystać z naszej platformy, mając pewność, że Twoje dane są chronione.</p>
                   </li>
                 </ul> <!-- / accordion -->
@@ -456,82 +473,6 @@
     </div>
   </div>
 </section>
-
-
-<!-- Sekcja z tabelą cenową -->
-<section class="pricing-tables" id="pricing-tables">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <!-- Nagłówek sekcji -->
-        <div class="section-heading">
-          <span>Zacznij oglądać już teraz</span>
-          <h2>Wybierz swój Plan</h2>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <!-- Pierwszy plan cenowy -->
-      <div class="col-md-4">
-        <div class="table-item">
-          <!-- Nagłówek planu -->
-          <div class="top-content">
-            <h4>Plan Podstawowy</h4>
-            <h1>10 PLN</h1>
-            <span>/miesięcznie</span>
-          </div>
-          <!-- Lista funkcji planu -->
-          <ul>
-            <li><a href="#">Bez reklam: Oglądaj treści bez przerw reklamowych.</a></li>
-            <li><a href="#">Jakość HD: Dostęp do treści w jakości HD.</a></li>
-            <li><a href="#">Ilość urządzeń: Możliwość jednoczesnego streamowania na jednym urządzeniu.</a></li>
-          </ul>
-          <!-- Przycisk zakupu -->
-          <div class="blue-button">
-            <a href="#">Kup teraz</a>
-          </div>
-        </div>
-      </div>
-        <div class="col-md-4">
-          <div class="table-item">
-            <div class="top-content">
-              <h4>Plan Standard</h4>
-              <h1>25 PLN</h1>
-              <span>/miesięcznie</span>
-            </div>
-            <ul>
-              <li><a href="#">Bez reklam: Oglądaj treści bez przerw reklamowych.</a></li>
-              <li><a href="#">Jakość FullHD: Dostęp do treści w jakości FullHD.</a></li>
-              <li><a href="#">Ilość urządzeń: Możliwość jednoczesnego streamowania na trzech urządzeniach.</a></li>
-              <li><a href="#">Pobieranie offline: Zapisuj treści offline na jednym urządzeniu.</a></li>
-            </ul>
-            <div class="blue-button">
-              <a href="#">Kup teraz</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="table-item">
-            <div class="top-content">
-              <h4>Plan Premium</h4>
-              <h1>50 PLN</h1>
-              <span>/miesięcznie</span>
-            </div>
-            <ul>
-              <li><a href="#">Bez reklam: Oglądaj treści bez przerw reklamowych.</a></li>
-              <li><a href="#">Jakość 4K: Dostęp do treści w najwyższej jakości 4k.</a></li>
-              <li><a href="#">Ilość urządzeń: Możliwość jednoczesnego streamowania na dowolnej liczbie urządzeń.</a></li>
-              <li><a href="#">Pobieranie offline: Zapisuj treści offline na maks. 3 urządzeniach.</a></li>
-              <li><a href="#">Dostęp do treści ekskluzywnych: Unikalne treści dostępne tylko dla subskrybentów Premium.</a></li>
-            </ul>
-            <div class="blue-button">
-              <a href="#">Kup teraz</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
 <!-- Stopka strony -->
 <footer style="background-color: #ffffff;">
@@ -617,6 +558,7 @@
     domain="www.chatbase.co"
     defer>
     </script>
+    </section>
 </body>
 
 </html>
